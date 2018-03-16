@@ -8,7 +8,7 @@ def start
   puts "You get there right after lunchtime. What would you like to do?"
   puts "You can go swimming, look for shells, or get some sun."
 print "> "
-  choice = $stdin.gets.chomp
+  choice = $stdin.gets.chomp.downcase
 
 
   if choice.include? "swimming"
