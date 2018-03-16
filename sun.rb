@@ -14,9 +14,11 @@ module Sun
     if towel == "yes" || towel == "y"
       Sun.glasses()
     elsif towel == "no" || towel == "n"
+      puts ""
       puts "You better go back to the house and get it!"
       Sun.start()
     else
+      puts ""
       puts "Please just play along!"
       Sun.start()
     end
@@ -35,15 +37,18 @@ module Sun
     if sunglasses == "yes" || sunglasses == "y"
       Sun.block()
     elsif sunglasses == "no" || sunglasses == "n"
+      puts ""
       puts "Yikes. You'll need those. Better go all the way back to the house and get them."
       Sun.start()
     else
+      puts ""
       puts "You had two choices. Yes or no?"
       Sun.start()
     end
   end
 
   def Sun.block()
+    puts ""
     puts "You grab the glasses out of your pocket. That's much better."
     puts "You look around at all the other people on the beach. There's a mother putting sunblock on her son."
     puts ""
@@ -53,10 +58,12 @@ module Sun
     sunblock = $stdin.gets.chomp.downcase
 
     if sunblock == "yes" || sunblock == "y"
+      puts ""
       puts "You put on the sunblock and lay back, relaxed by the sounds of the ocean."
       puts "This is wonderful."
       win()
     elsif sunblock == "no" || sunblock == "n"
+      puts ""
       puts "I think you know what you need to do. Head on back to the house and get it!"
       Sun.start()
     end

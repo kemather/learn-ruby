@@ -14,6 +14,7 @@ module Swimming
     if sunscreen == "yes" || sunscreen == "y"
        Swimming.water()
     elsif sunscreen == "no" || sunscreen == "n"
+      puts ""
       puts "You enjoy yourself in the waves."
       puts "When you return to the house later, you start to feel itchy."
       puts "Before too long, your skin is stinging."
@@ -21,12 +22,14 @@ module Swimming
       puts "Should have remembered the sunscreen."
       lose()
     else
+      puts ""
       puts "Just answer the question!"
       Swimming.start()
     end
   end
 
     def Swimming.water()
+      puts ""
       puts "Good job remembering the sunscreen! It's important to keep your skin safe."
       puts "You and Sally put on sunscreen and lay out your towels while it soaks in."
       puts "'Come on! Let's get in the water!' Sally says."
@@ -41,6 +44,7 @@ module Swimming
       if further == "yes" || further == "y"
         Swimming.shark()
       elsif further == "no" || further == "n"
+        puts ""
         puts "'Come on! Let's go out farther' Sally begs. 'No,' you say, 'I'll stay here where it's safe.'"
         puts "Sally rolls her eyes. 'You're so boring. I don't know why we even invited you.'"
         puts "Sally swims out into deeper water. All of a sudden, a shark appears."
@@ -51,6 +55,7 @@ module Swimming
     end
 
     def Swimming.shark()
+      puts ""
       puts "You swim out into deeper water. This is so refreshing!"
       puts "As you're enjoying yourself, you spot a dark shadow a few yards away."
       puts "You immediately feel a sense of forboding, but try and brush it off."
