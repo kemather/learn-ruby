@@ -1,9 +1,11 @@
 module Swimming
 
   def Swimming.start()
+    puts ""
     puts "'Good choice!' your friend Sally says. You walk down to the beach."
     puts "'Did you bring any sunscreen?', Sally asks, looking up at the sun."
     puts "'I don't want to get burnt'."
+    puts ""
     puts "Did you remember the sunscreen? Yes or No"
     print "> "
 
@@ -17,7 +19,7 @@ module Swimming
       puts "Before too long, your skin is stinging."
       puts "You look in the mirror. You're as red as a lobster!"
       puts "Should have remembered the sunscreen."
-      lose("sunscreen")
+      lose()
     else
       puts "Just answer the question!"
       Swimming.start()
@@ -30,6 +32,7 @@ module Swimming
       puts "'Come on! Let's get in the water!' Sally says."
       puts "The water is clear and cool, with just a few waves."
       puts "You and Sally swim for a while, but it looks even better further out."
+      puts ""
       puts "Should you swim out a little further, where it's deeper? Yes or No"
       print "> "
 
@@ -43,7 +46,7 @@ module Swimming
         puts "Sally swims out into deeper water. All of a sudden, a shark appears."
         puts "Before you can even shout a warning, Sally is gone. The shark has eaten her."
         puts "You shrug and go back to the beach. Sally was annoying you anyway."
-        win("best_weekend")
+        win()
       end
     end
 
@@ -54,7 +57,7 @@ module Swimming
       puts "All of a sudden, something grabs your leg!"
       puts "It's a shark! And OUCH! It bites your leg off."
       puts "You struggle back to the beach, bleeding heavily."
-      lose("worst_weekend")
+      lose()
     end
 
   end

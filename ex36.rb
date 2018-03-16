@@ -24,12 +24,12 @@ print "> "
   end
 end
 
-def win(best_weekend)
+def win()
   puts "You can't believe how much fun you're having. It's the best weekend ever!"
   exit(0)
 end
 
-def lose(worst_weekend)
+def lose()
   puts "You can't believe your rotten luck. This is the worst weekend of your life."
   exit(0)
 end
